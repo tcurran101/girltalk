@@ -1,19 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
 
 .navbar {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: "candalregular", sans-serif;
   font-weight: 200;
-}
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background-color: #B7A7C8;
+  }
 
 .navbar-inverse a.navbar-brand {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: "candalregular", sans-serif;
   font-weight: 100;
+  font-size: 50px;
+  color: #463ba8;
+  letter-spacing: -5.5px;
+}
+
+.nav-link {
+  color: #463ba8;
 }
 
 h1 {
   font-family: 'Baloo Bhai', cursive;
 }
 
-body {
-  background: image_url('stripesbkgd.png');
+h2 {
+  font-family: 'Open Sans';
 }
+
+body {
+    background: image_url('powbkgd.png');
+    font-family: 'Sans Open', sans-serif;
+  }
