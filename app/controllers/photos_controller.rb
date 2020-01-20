@@ -10,7 +10,7 @@ class PhotosController < ApplicationController
   end
 
   def create
-    Photo.create(photo_params)
+    current_user.photos.create(photo_params)
     redirect_to root_path
   end
 

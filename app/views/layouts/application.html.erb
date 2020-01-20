@@ -14,20 +14,29 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <%= link_to 'GirlTalk', root_path, class: 'navbar-brand' %>
+      <%= link_to 'GirlTalk', root_url, class: 'navbar-brand' %>
+
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0" style="list-style-type:none;">
+          <li class="nav-item">
+          <%= link_to 'Home', root_path, class: 'nav-link' %>
           </li>
         </ul>
 
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="list-style-type:none;">
           <% if current_user %>
-            You're signed in as <%= current_user.email %>.
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+          <li class="nav-item">
+            <%= link_to 'My Dashboard', "#", class: 'nav-link' %>
+          </li>
+
+
+            <li class="nav-item">
+              <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
             </li>
+
+
           <% else %>
             <li class="nav-item">
               <%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %>
@@ -35,9 +44,9 @@
             <li class="nav-item">
               <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
             </li>
-
           <% end %>
         </ul>
+
       </div>
     </nav>
 
