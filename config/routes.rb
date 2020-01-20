@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#index'
+
+  resources :photos, only: :create
+  resources :users, only: :show
 end
