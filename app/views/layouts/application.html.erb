@@ -19,13 +19,13 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-        <ul class="navbar-nav mr-auto mt-2 mt-md-0" style="list-style-type:none;">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
           <%= link_to 'Home', root_path, class: 'nav-link' %>
           </li>
         </ul>
 
-        <ul class="navbar-nav" style="list-style-type:none;">
+        <ul class="navbar-nav">
           <% if current_user %>
           <li class="nav-item">
             <%= link_to 'My Dashboard', "#", class: 'nav-link' %>
