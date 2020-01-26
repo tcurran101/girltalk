@@ -30,4 +30,19 @@ h2 {
 body {
     background: image_url('powbkgd.png');
     font-family: 'Sans Open', sans-serif;
+   }
+
+   .booyah-box {
+    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    box-shadow: 1px 1px 2px 0 #d0d0d0;
+    background: image_url('booyah.jpg');
+    border: 1px solid rgb(158, 157, 156);
+    border-color: #bdbdb8 #bebebd #bebebd #bdbdb8;
+    padding: 10px;
+    background-color: whitesmoke
+  }
+
+  .booyah-box h2, .booyah-box h1 {
+    margin: 10px;
   }
