@@ -9,12 +9,8 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
-  def new
-    @photo = Photo.new
-  end
-
-  def create
-    current_user.photos.create(photo_params)
+   def create
+    @photo = current_user.photos.create(photo_params)
     redirect_to root_path
   end
 
