@@ -9,14 +9,18 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
-   def create
-    @photo = current_user.photos.create(photo_params)
-    redirect_to root_path
+  def new
+    @photo = Photo.new
+  end
+
+  def create
+   @photo = current_user.photos.create(photo_params)
+    redirect_to home_path
   end
 
   private
 
-  def place_params
+  def photo_params
     params.require(:photo).permit(:caption)
   end
 
