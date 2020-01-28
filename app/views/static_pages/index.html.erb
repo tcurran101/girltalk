@@ -17,12 +17,13 @@
 
   <div class="row">
     <div class="col-12 col-sm-8">
-    <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "current-password" %>
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password" %>
+      </div>
     </div>
   </div>
-</div>
+
 </br>
       <% if devise_mapping.rememberable? %>
         <div class="field">

@@ -9,9 +9,6 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
-  def new
-    @photo = Photo.new
-  end
 
   def create
    @photo = current_user.photos.create(photo_params)
@@ -21,7 +18,7 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:caption)
+    params.require(:photo).permit(:caption, :image)
   end
 
 end
