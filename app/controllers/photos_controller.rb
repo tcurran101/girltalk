@@ -15,6 +15,10 @@ class PhotosController < ApplicationController
     redirect_to home_path
   end
 
+  def new
+    @photo = Photo.new
+  end
+
   private
 
   def photo_params

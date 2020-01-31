@@ -1,15 +1,39 @@
 </br>
 <h1>Home Page</h1>
 
-<div class="booyah-box col-8 offset-2">
-  <h2>Placeholder for gallery</h2>
-</div>
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h1>Hi</h1>
+      </div>
+      <div class="col-6">
+        <div class="row">
+          <div class="col-3">
+            <h1>Sup</h1>
+          </div>
+          <div class="col-3">
+            <h1>Doh</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <h1>Sup</h1>
+          </div>
+          <div class="col-3">
+            <h1>Doh</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <br />
 <div class="row feature text-center">
     <div class="col-12 col-sm">
-      <i class="fas fa-camera-retro"></i>
-      <h3><%= link_to "Photos", photos_path %></h3>
+      <%= link_to photos_path do  %>
+       <i class="fas fa-camera-retro"></i>
+      <% end %>
       <br />
       <p>Share your beautiful faces, ladies!.</p>
     </div>

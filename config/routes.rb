@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   get 'home', to: 'static_pages#home'
 
-  resources :photos, only: [:new, :index, :show, :create]
+  resources :photos
   resources :users, only: :show
 end
