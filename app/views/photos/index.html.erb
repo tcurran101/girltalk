@@ -1,13 +1,15 @@
 
 <div class="container">
-
+  <section id="photos"></section>
   <div class="row text-center text-lg-left mt-5">
-    <% @photos.each do |photo| %>
-      <div class="col-lg-3 col-md-4 col-6">
 
-        <%= image_tag photo.image.to_s, class: 'img-fluid' %>
+      <% @photos.each do |photo| %>
 
-    </div>
-    <% end %>
+        <div class="col-lg-3 col-md-4 col-6">
+          <%= image_tag photo.image.to_s, class: 'img-fluid' %>
+        </div>
+
+      <% end %>
   </div>
+</section>
 </div>
