@@ -1,5 +1,24 @@
-<div class="booyah-box col-10 offset-1 mt-5">
-  <% @photos.each do |photo| %>
-    <%= image_tag photo.image.to_s, class: 'img-fluid' %>
-  <% end %>
+<script>
+  $(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+</script>
+
+
+<div class="row mt-5">
+  <div class="col-10 col-sm-8 offset-1">
+
+    <div id="mdb-lightbox-ui"></div>
+
+    <div class="mdb-lightbox">
+
+      <figure class="col-md-4">
+        <% @photos.each do |photo| %>
+        <%= image_tag photo.image.to_s, class: 'img-fluid' %>
+      <% end %>
+      </figure>
+
+    </div>
+
+  </div>
 </div>
