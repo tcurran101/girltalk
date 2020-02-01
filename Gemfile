@@ -79,3 +79,4 @@ gem 'simple_form', '~> 5.0', '>= 5.0.1'
 
 gem "figaro"
 gem "fog-aws"
+gem "mini_magick"
