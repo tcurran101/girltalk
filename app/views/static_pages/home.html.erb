@@ -5,72 +5,83 @@
 
   <body>
 
-
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-6">
-      <h1>Hi</h1>
-    </div>
-    <div class="col-6">
-      <div class="row">
-        <div class="col-3">
-          <h1>Sup</h1>
+    <div class="col-8 offset-2 mt-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag 'slider1.jpg', class: 'img-fluid' %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Duck Face</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>The whole fam!</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Mi Bruhas. Love.</h3>
+            </div>
+          </div>
         </div>
-        <div class="col-3">
-          <h1>Doh</h1>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+    <br />
+    <div class="row feature text-center mt-5">
+        <div class="col-12 col-sm">
+          <%= link_to new_photo_path do  %>
+          <i class="fas fa-camera-retro fa-5x mb-3" style="color:teal" ></i>
+          <% end %>
+          <br />
+          <p>Share your beautiful faces, ladies!</p>
+        </div>
+
+        <div class="col-12 col-sm">
+          <%= link_to "#" do  %>
+          <i class="fas fa-music fa-5x mb-3" style="color:purple" ></i>
+          <% end %>
+          <br />
+          <p>Totes diggin a tune? Let's hear it!</p>
+        </div>
+
+        <div class="col-12 col-sm">
+          <%= link_to "#" do  %>
+          <i class="fas fa-edit fa-5x mb-3" style="color:#1DCD2B" ></i>
+        <% end %>
+        <br />
+          <p>Spill the T, gurl!</p>
+        </div>
+    </div>
+
+    <br />
+      <div class="row feature text-center">
+        <div class="booyah-box col-6 offset-1">
+          <h2>Placeholder for Latest Blog</h2>
+        </div>
+
+        <div class="booyah-box col-3 offset-1">
+          <h2>Placeholder for rTunes</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-3">
-          <h1>Sup</h1>
-        </div>
-        <div class="col-3">
-          <h1>Doh</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<br />
-<div class="row feature text-center">
-    <div class="col-12 col-sm">
-      <%= link_to new_photo_path do  %>
-       <i class="fas fa-camera-retro fa-7x mb-3" style="color:teal" ></i>
-      <% end %>
-      <br />
-      <p>Share your beautiful faces, ladies!</p>
     </div>
 
-    <div class="col-12 col-sm">
-      <%= link_to "#" do  %>
-       <i class="fas fa-music fa-7x mb-3" style="color:purple" ></i>
-      <% end %>
-      <br />
-      <p>Totes diggin a tune? Let's hear it!</p>
-    </div>
-
-    <div class="col-12 col-sm">
-      <%= link_to "#" do  %>
-      <i class="fas fa-edit fa-7x mb-3" style="color:#1DCD2B" ></i>
-     <% end %>
-     <br />
-      <p>Spill the T, gurl!</p>
-    </div>
-</div>
-
-<br />
-  <div class="row feature text-center">
-    <div class="booyah-box col-6 offset-1">
-      <h2>Placeholder for Latest Blog</h2>
-    </div>
-
-    <div class="booyah-box col-3 offset-1">
-      <h2>Placeholder for rTunes</h2>
-    </div>
-  </div>
- </div>
-
-</body>
+  </body>
 </html>
