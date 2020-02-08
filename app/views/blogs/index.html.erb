@@ -5,3 +5,26 @@
 </div>
 
 <h2>Blog Posts</h2>
+
+<!-- <div id="page" class="col-8 offset-2 mt-3">
+<div id="content_box">
+  <div class="article">
+    <h3 class="featured-category-title" title="What's the Skinny?"></h3>
+  <article class="latestPost excerpt last featuredPost"></article>
+</div>
+  </div>
+</div>
+</div>
+-->
+
+
+<% @blogs.each do |blog| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= link_to blog.title, blog_path(blog) %></h1><br />
+    <i><%= blog.subtitle %></i><br /><br />
+    <p><%= blog.author %></p><br />
+
+
+
+  </div>
+<% end %>
