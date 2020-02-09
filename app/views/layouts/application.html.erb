@@ -7,6 +7,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=AIzaSyDeI7Gi6ZpRam5Mo3cLmw4KreV4SMEahMw" type="text/javascript"></script>
+    <script language="Javascript" type="text/javascript"> searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad)></script>
   </head>
 
   <body>
@@ -60,8 +62,11 @@
             </li>
           <% end %>
         </ul>
+      </div>
 
-
+      <div id="search-box">
+        <script async src="https://cse.google.com/cse.js?cx=001206432501022560131:7lnc4tr8sr7"></script>
+        <div class="gcse-search"></div>
       </div>
     </nav>
 

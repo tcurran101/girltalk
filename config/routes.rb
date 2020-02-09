@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   resources :photos
   resources :users, only: :show
   resources :blogs
+  resources :events
+  resources :search
 end
