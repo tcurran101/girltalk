@@ -26,16 +26,28 @@
               <div id="content_box">
                   <header>
                     <h3><%= link_to blog.title, blog_path(blog) %></h3>
+                  <hr>
                   </header><br />
 
-                  <i><%= blog.subtitle %></i><br /><br />
-                  <p><%= blog.author %></p><br />
+                  <i><%= blog.subtitle %></i><br />
+                  <br />
+
+                  <div class="row">
+                    <div class="col-6">
+                        <p>Posted by: <%= blog.author %></p>
+                    </div>
+                      </br>
+                    <div class="col-6 float-right">
+                      <p><%= l blog.created_at.to_date, format: :long %></p>
+                    </div>
+                  </div>
+              </div>
             </div>
           </div>
-        </div>
         <% end %>
-      </div>
-   </div>
+
+    </div>
+  </div>
 
 </body>
 
