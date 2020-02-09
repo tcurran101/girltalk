@@ -68,6 +68,8 @@
 #content_box {
   float: left;
   width: 100%;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .latestPost .title, .latestPost .title a {
@@ -83,14 +85,6 @@
   margin-bottom: 7px;
 }
 
-h1, h2, h3 h4 {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
 
 .featured-category-title {
   font-weight: 400;

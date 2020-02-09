@@ -3,8 +3,8 @@
   <div class="booyah-box col-12 mt-3">
     <div class="col-12">
         <div class="row feature">
-          <div class="col-12 col-lg float-left">
-            <h1>What's the Skinny?</h1>
+          <div class="col-12 col-lg float-left mb-3">
+            <h2>What's the Skinny?</h2>
           </div>
 
           <div class="col-12 col-sm float-right">
@@ -14,28 +14,28 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div id="content_box">
-            <div class="latestPost excerpt last mb-3">
-              <div class="col-12 col-lg float-left">
-              <% @blogs.each do |blog| %>
+  <div class="booyah-box col-12 mt-1">
+    <div class="row feature">
+      <% @blogs.each do |blog| %>
+          <div class="latestPost">
+            <div class="col-12 col-lg float-left">
+              <div id="content_box">
                   <header>
                     <h3><%= link_to blog.title, blog_path(blog) %></h3>
                   </header><br />
 
                   <i><%= blog.subtitle %></i><br /><br />
                   <p><%= blog.author %></p><br />
-              <% end %>
             </div>
           </div>
         </div>
-        </div>
-
-
+        <% end %>
       </div>
-    </div>
-
-
+   </div>
 
 </body>
 
