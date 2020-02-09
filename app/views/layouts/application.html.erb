@@ -7,8 +7,6 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=AIzaSyDeI7Gi6ZpRam5Mo3cLmw4KreV4SMEahMw" type="text/javascript"></script>
-    <script language="Javascript" type="text/javascript"> searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad)></script>
   </head>
 
   <body>
@@ -45,10 +43,6 @@
           <li class="nav-item">
             <%= link_to 'Blogs', blogs_path, class: 'nav-link' %>
         </li>
-
-        <li class="nav-item">
-          <%= link_to 'Calendar', "#", class: 'nav-link' %>
-      </li>
 
             <li class="nav-item">
               <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
