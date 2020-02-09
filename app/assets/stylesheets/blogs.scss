@@ -16,3 +16,86 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.latestPost {
+  width: 31.6%;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 2.6%;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  position: relative;
+}
+
+.article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.latestPost header {
+  padding: 15px 20px 14px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  min-height: 135px;
+}
+
+.latestPost {
+  width: 31.6%;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 2.6%;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,.05);
+  position: relative;
+}
+
+.article header {
+  margin-bottom: 11px;
+  float: left;
+  width: 100%;
+}
+
+.frosty {
+  background: #faf4fddf;
+  color: black;
+}
+
+#content_box {
+  float: left;
+  width: 100%;
+}
+
+.latestPost .title, .latestPost .title a {
+  font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333;
+  line-height: 36px;
+}
+
+.latestPost .title {
+  display: block;
+  margin-bottom: 7px;
+}
+
+h1, h2, h3 h4 {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+.featured-category-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #333;
+  line-height: 36px;
+  background-color: grey;
+}
