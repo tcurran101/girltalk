@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   font-family: 'Open Sans';
+  font-weight: 600;
 }
 
 body {
@@ -52,3 +53,10 @@ body {
     padding-right: 5%;
     height: 100%
   }
+
+  hr {
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
