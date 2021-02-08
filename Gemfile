@@ -76,7 +76,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
 
 gem "figaro"
